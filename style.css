@@ -1,0 +1,27 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0b0c10, #1f2833);
+  min-height: 100vh;
+}
+
+.card {
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 255, 255, 0.15);
+}
+
+h1, p {
+  user-select: none;
+}
+.gallery-img {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
