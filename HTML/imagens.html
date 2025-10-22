@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imagens - Biomaquete</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Estilo próprio -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Cabeçalho -->
+  <header class="d-flex align-items-center justify-content-between px-3 py-3 border-bottom border-info">
+    <a href="index.html" class="btn btn-outline-info btn-sm">
+      <i class="bi bi-arrow-left"></i> Voltar
+    </a>
+    <h2 class="m-0 text-info fw-bold">Galeria de Imagens</h2>
+    <div style="width:40px;"></div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container py-4">
+    <div class="row g-3">
+
+      <!-- Imagens com zoom -->
+      <div class="col-6 col-md-4">
+        <img src="/IMAGENS/neurônio1.jpg" class="img-fluid rounded-4 shadow-sm gallery-img" alt="Biomaquete Neurônio 1">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="/IMAGENS/neurônio2.webp" class="img-fluid rounded-4 shadow-sm gallery-img" alt="Biomaquete Neurônio 2">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="/IMAGENS/neurônio3.jpg" class="img-fluid rounded-4 shadow-sm gallery-img" alt="Biomaquete Neurônio 3">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="/IMAGENS/neurônio4.jpg" class="img-fluid rounded-4 shadow-sm gallery-img" alt="Biomaquete Neurônio 4">
+      </div>
+
+      <div class="col-6 col-md-4">
+        <img src="/IMAGENS/neurônio5.jpg" class="img-fluid rounded-4 shadow-sm gallery-img" alt="Biomaquete Neurônio 5">
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modal para Zoom -->
+  <div class="modal fade" id="zoomModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-body text-center">
+          <img id="zoomedImage" src="" class="img-fluid rounded-4" alt="">
+        </div>
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-center mt-4 text-secondary small">
+    <p>&copy; 2025 • Projeto Escolar - IFRN</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
