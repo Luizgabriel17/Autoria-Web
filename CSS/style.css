@@ -25,4 +25,13 @@ h1, p {
   transform: scale(1.05);
   opacity: 0.9;
 }
+#zoomedImage {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+#zoomModal.show #zoomedImage {
+  transform: scale(1);
+  opacity: 1;
+}
