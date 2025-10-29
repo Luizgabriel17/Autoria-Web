@@ -25,6 +25,7 @@ h1, p {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
 #zoomedImage {
   transform: scale(0.9);
   opacity: 0;
@@ -35,3 +36,9 @@ h1, p {
   transform: scale(1);
   opacity: 1;
 }
+.modal-backdrop.show {
+  backdrop-filter: blur(8px); /* nível do desfoque */
+  background-color: rgba(0, 0, 0, 0.6); /* escurece um pouco */
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
